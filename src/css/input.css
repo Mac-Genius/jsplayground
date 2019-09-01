@@ -1,0 +1,26 @@
+.input-select {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    background-image: none;
+}
+
+.input-select::-ms-expand {
+	display: none;
+}
+
+.input-select:hover {
+	border-color: #888;
+}
+.input-select:focus {
+	border-color: #aaa;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+
+.input-md {
+    height: 2rem;
+    width: 8rem;
+}

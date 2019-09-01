@@ -1,0 +1,48 @@
+.draggable-list {
+    list-style-type: none;
+    background-color: #69778b;
+    user-select: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+}
+
+.draggable-list.vertical {
+    flex-direction: column;
+}
+
+.draggable-list.horizontal {
+    flex-direction: row;
+}
+
+.draggable-item {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.draggable-list.vertical .draggable-item {
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+.draggable-list.vertical > .draggable-item:not(:last-child) {
+    border-bottom: 1px solid #69778b;
+
+}
+
+.draggable-list.horizontal .draggable-item {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.draggable-list.horizontal > .draggable-item:not(:last-child) {
+    border-right: 1px solid #69778b;
+}
+
+.draggable-item.dragging {
+    background-color: #7c85e2;
+}
+
+.draggable-item:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
